@@ -4,3 +4,6 @@ AllCops:
 
 Layout/DotPosition:
   EnforcedStyle: trailing
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
