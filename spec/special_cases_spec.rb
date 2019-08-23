@@ -36,4 +36,18 @@ RSpec.describe Stemmerb::SpecialCases do
 
     it { is_expected.to eq(expected) }
   end
+
+  describe '#invariant_forms' do
+    subject { described_class.new.invariant_forms }
+
+    let(:expected) do
+      {
+        'sky' => 'sky',
+        'news' => 'news',
+        'howe' => 'howe',
+      }
+    end
+
+    it { is_expected.to eq(expected) }
+  end
 end

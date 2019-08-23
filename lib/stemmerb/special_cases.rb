@@ -26,5 +26,15 @@ module Stemmerb
         'singly' => 'singl',
       }
     end
+
+    # These are words that will not be changing,
+    # and so do not need to go through the stemming algorithm.
+    def invariant_forms
+      {
+        'sky' => 'sky',
+        'news' => 'news',
+        'howe' => 'howe',
+      }
+    end
   end
 end
