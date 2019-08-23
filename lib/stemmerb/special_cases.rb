@@ -14,5 +14,17 @@ module Stemmerb
         'tying' => 'tie',
       }
     end
+
+    # These are the special -ly ending words
+    def ly_cases
+      {
+        'idly' => 'idl',
+        'gently' => 'gentl',
+        'ugly' => 'ugli',
+        'early' => 'earli',
+        'only' => 'onli',
+        'singly' => 'singl',
+      }
+    end
   end
 end

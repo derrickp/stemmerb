@@ -19,4 +19,21 @@ RSpec.describe Stemmerb::SpecialCases do
 
     it { is_expected.to eq(expected) }
   end
+
+  describe '#ly_cases' do
+    subject { described_class.new.ly_cases }
+
+    let(:expected) do
+      {
+        'idly' => 'idl',
+        'gently' => 'gentl',
+        'ugly' => 'ugli',
+        'early' => 'earli',
+        'only' => 'onli',
+        'singly' => 'singl',
+      }
+    end
+
+    it { is_expected.to eq(expected) }
+  end
 end
