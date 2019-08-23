@@ -1,0 +1,6 @@
+AllCops:
+  Exclude:
+    - bin/**
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
