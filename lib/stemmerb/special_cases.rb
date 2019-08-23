@@ -36,5 +36,16 @@ module Stemmerb
         'howe' => 'howe',
       }
     end
+
+    # These are words that might look plural to the stemming algorithm,
+    # but are definitely not.
+    def non_plural
+      {
+        'atlas' => 'atlas',
+        'cosmos' => 'cosmos',
+        'bias' => 'bias',
+        'andes' => 'andes',
+      }
+    end
   end
 end

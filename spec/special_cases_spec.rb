@@ -50,4 +50,19 @@ RSpec.describe Stemmerb::SpecialCases do
 
     it { is_expected.to eq(expected) }
   end
+
+  describe '#non_plural' do
+    subject { described_class.new.non_plural }
+
+    let(:expected) do
+      {
+        'atlas' => 'atlas',
+        'cosmos' => 'cosmos',
+        'bias' => 'bias',
+        'andes' => 'andes',
+      }
+    end
+
+    it { is_expected.to eq(expected) }
+  end
 end
