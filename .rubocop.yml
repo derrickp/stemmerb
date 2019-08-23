@@ -15,3 +15,7 @@ Style/TrailingCommaInHashLiteral:
 
 Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - spec/**/*
