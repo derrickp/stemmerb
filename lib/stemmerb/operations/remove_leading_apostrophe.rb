@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 module Stemmerb
   module Operations
     # This operation removes the leading apostrophe of the input string
     class RemoveLeadingApostrophe
       def call(input)
         return remove_leading(input) if leading_apostrophe?(input)
+
         input
       end
 
