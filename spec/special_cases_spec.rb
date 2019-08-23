@@ -65,4 +65,33 @@ RSpec.describe Stemmerb::SpecialCases do
 
     it { is_expected.to eq(expected) }
   end
+
+  describe '#all' do
+    subject { described_class.new.all }
+
+    let(:expected) do
+      {
+        'skis' => 'ski',
+        'skies' => 'sky',
+        'dying' => 'die',
+        'lying' => 'lie',
+        'tying' => 'tie',
+        'idly' => 'idl',
+        'gently' => 'gentl',
+        'ugly' => 'ugli',
+        'early' => 'earli',
+        'only' => 'onli',
+        'singly' => 'singl',
+        'sky' => 'sky',
+        'news' => 'news',
+        'howe' => 'howe',
+        'atlas' => 'atlas',
+        'cosmos' => 'cosmos',
+        'bias' => 'bias',
+        'andes' => 'andes',
+      }
+    end
+
+    it { is_expected.to eq(expected) }
+  end
 end

@@ -5,6 +5,16 @@ module Stemmerb
   # These are cases where the stemming algorithm would break
   # what the actual output word would be.
   class SpecialCases
+    # All of the special cases at once.
+    def all
+      [
+        special_changes,
+        ly_cases,
+        invariant_forms,
+        non_plural,
+      ].inject(&:merge)
+    end
+
     def special_changes
       {
         'skis' => 'ski',
