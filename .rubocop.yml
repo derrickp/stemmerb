@@ -5,5 +5,10 @@ AllCops:
 Layout/DotPosition:
   EnforcedStyle: trailing
 
+Metrics/BlockLength:
+  Exclude:
+    - spec/**
+    - stemmerb.gemspec
+
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: comma
