@@ -7,7 +7,7 @@ Layout/DotPosition:
 
 Metrics/BlockLength:
   Exclude:
-    - spec/**
+    - spec/**/*
     - stemmerb.gemspec
 
 Style/TrailingCommaInHashLiteral:
